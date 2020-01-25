@@ -1,0 +1,38 @@
+\usepackage{graphicx}
+
+\setlength{\parindent}{0pt} 
+\usepackage{geometry}
+\geometry{
+	paper=a4paper,
+	top=3.25cm, 
+	bottom=4cm, 
+	left=3.5cm, 
+	right=3.5cm,
+	headheight=0.75cm,
+	footskip=1cm,
+	headsep=0.75cm
+}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} 
+\usepackage[semibold]{ebgaramond}
+\usepackage{sectsty} 
+\sectionfont{\fontsize{12.8pt}{17pt}\selectfont}
+\subsectionfont{\mdseries\scshape\normalsize}
+\subsubsectionfont{\mdseries\upshape\bfseries\normalsize}
+
+\usepackage{marginnote}
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{-10pt}
+\reversemarginpar
+
+\usepackage[usenames, dvipsnames]{xcolor}
+\usepackage[bookmarks, colorlinks, breaklinks]{hyperref} 
+
+\hypersetup{
+	linkcolor=blue,
+	citecolor=blue,
+	filecolor=black,
+	urlcolor=MidnightBlue
+}
