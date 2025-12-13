@@ -1,4 +1,4 @@
-# you want me
+# A CV template that makes you sexier
 
 
 
