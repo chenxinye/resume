@@ -1,71 +1,112 @@
-\documentclass[11pt]{article}
-\usepackage{caption}
-\usepackage{graphicx, subfig}
-\input{CVstructure.tex}
+\documentclass[11pt, a4paper]{article}
 
+\usepackage[left=1in,top=1in,right=1in,bottom=1in]{geometry} 
+\usepackage{graphicx}     
+\usepackage{xcolor}       
+\usepackage{titlesec}     
+\usepackage{enumitem}    
+\usepackage{tikz}         
+\usepackage{parskip}      
+\usepackage{fontawesome5} 
 
+\definecolor{MYHONEYGOLD}{RGB}{184, 134, 11} 
+\definecolor{MYDARkGRAY}{RGB}{60, 60, 60}
+
+\usepackage{hyperref}     
 \hypersetup{
-	pdftitle={Honey Chen - resume},
-	pdfauthor={Honey Chen}
+    colorlinks=true,
+    linkcolor=MYHONEYGOLD,   
+    filecolor=MYHONEYGOLD,      
+    urlcolor=MYHONEYGOLD,
 }
+
+\titleformat{\section}
+  {\large\bfseries\color{MYDARkGRAY}\uppercase} 
+  {}
+  {0em}
+  {}[\color{MYHONEYGOLD}\titlerule]
+  
+\titlespacing{\section}{0pt}{18pt}{8pt}
+
+\pagestyle{empty}
 
 \begin{document}
 
-\begin{figure}
-	\centering
-	\includegraphics[width=.5\textwidth]{honey.jpg}
-	%\caption{honey}
-	\label{honey profile} 
-\end{figure}
+\begin{minipage}[c]{0.65\textwidth}
+    {\huge\bfseries\color{MYDARkGRAY} HONEY CHEN} \\[0.2cm]
+    {\large\color{MYHONEYGOLD} \textit{Professional Honey Badger Specialist, You Want Me!}} \\[0.5cm]
+    
+    \small
+    \begin{tabular}{@{}ll}
+        \faMapMarker &  \textbf{Location:} Planet Earth (Currently) \\
+        \faPhone & \textbf{Mobile:} +44 07395629285 (UK) \\
+                 & \textit{\footnotesize (Please do not call; I maintain a strict 20-hour sleep schedule)} \\
+        \faEnvelope & \href{mailto:cclcquant@yahoo.com}{cclcquant@yahoo.com} \\
+        \faGithub & \href{https://github.com/chenxinye}{github.com/chenxinye}
+    \end{tabular}
+\end{minipage}%
+\begin{minipage}[c]{0.35\textwidth}
+    \begin{flushright}
+        \begin{tikzpicture}
+            \clip (0,0)  circle (1.6cm) ;
+            \node[anchor=center] at (0,0) {\includegraphics[width=3.2cm]{honey.jpg}}; 
+        \end{tikzpicture}
+    \end{flushright}
+\end{minipage}
 
+\vspace{0.5cm}
 
-{\LARGE\bfseries Honey Chen}
-\bigskip\medskip
+\section{Executive Summary}
+A highly ambitious individual with a complex understanding of gravity and mustelids. 
+\begin{itemize}[leftmargin=*, label=\textcolor{MYHONEYGOLD}{\faCheck}]
+    \item \textbf{Early Athleticism:} Demonstrated basketball proficiency starting at age 10.
+    \item \textbf{Linguistics:} Successfully unlocked the "English Language" skill tree by age 23.
+    \item \textbf{Vertical Mobility:} Possess the ability to jump exceptionally high.
+    \item \textbf{Wildlife Relations:} Once encountered a Honey Badger; developed a deep appreciation for their intelligence and aggressive cuteness.
+\end{itemize}
 
+\section{Current Position}
+\textbf{Full-Time Human Being} \hfill \textit{1996 -- Present} \\
+\textit{Role: Biological Male}
+\begin{itemize}[noitemsep]
+    \item Performing daily metabolic functions and existence.
+\end{itemize}
 
-Mobile: +44 07395629285(UK) - Don't call me, I sleep almost all day 
-\medskip
+\section{Education}
+\textbf{University of Bilibili \& YouTube} \hfill \textit{2015 -- 2019} \\
+\textit{Ph.D. in Digital Streaming \& Meme Consumption}
+\begin{itemize}[noitemsep]
+    \item Specialised in skipping ads and 2x speed playback.
+\end{itemize}
 
-\medskip
-Email: \href{mailto:cclcquant@yahoo.com}{cclcquant@yahoo.com}
-\textsc{Github}: \href{https://github.com/chenxinye}{https://github.com/chenxinye}
+\section{Areas of Specialisation}
+\begin{itemize}[leftmargin=*, label=\textcolor{MYHONEYGOLD}{\faLeaf}]
+    \item \textbf{Eco-Architecture:} Constructing large residential structures utilizing exclusively organic flora (Plants \& Trees).
+    \item \textbf{Diplomacy:} Establishing strategic alliances and friendships with Honey Badgers.
+\end{itemize}
 
-\section*{Education}
-\years{2015-2019}\textsc{graduate} in Bilibili \& Youtube
+\section{Core Competencies}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Physical Motor Skills:} Jumping, Running, Vocal Projection (Shouting), Emotional Release (Laughing, Crying).
+    \item \textbf{Languages:} 
+        \begin{itemize}
+            \item \textbf{Chinese:} Native Proficiency (Factory Reset Default).
+            \item \textbf{English:} Advanced Proficiency.
+        \end{itemize}
+    \item \textbf{Communication Tools:} WeChat, WhatsApp (Proficient in saying "What's up").
+\end{itemize}
 
+\section{Honours \& Awards}
+\textbf{3rd Place, Primary School Rope Skipping Invitational} 
+\begin{itemize}
+    \item Outperformed dozens of peers in high-intensity rhythmic jumping.
+\end{itemize}
 
-\section*{Brief introduction}
-• I can play basketball in my 10 years old\\
-• I can also speak English til my 23 years old\\
-• I can jump very high\\
-• I once met a honey badger\\
-• I love honey badgers cause they are very cute and smart
-
-
-\section*{Current position}
-%\emph{Student},
-A man
-
-
-\section*{Areas of specialisation}
-How to build a big house with plants and trees, How to make friends with honey badgers
-
-
-\section*{Core skills}
-•Body Skills: Jump, Run, Shout, Laugh, Cry
-\vspace{0.01\textheight}
-•Language Skills:Chinese(Born To Speak), English
-\vspace{0.01\textheight}
-•Communication Skills:Wechat, What's up
-
-
-
-\section*{Grants, Honours \& Awards}
-Rank the third in jump rope game in my primary school  
-
-
-\section*{Project}
-\years{1996-2019} I told a story to a honey badger
-
+\section{Key Projects}
+\textbf{The Badger Narrative Initiative} \hfill \textit{1996 -- 2019}
+\begin{itemize}
+    \item \textbf{Objective:} To convey a fictional narrative to a wild animal.
+    \item \textbf{Result:} Successfully told a story to a Honey Badger. (Badger feedback pending).
+\end{itemize}
 
 \end{document}
