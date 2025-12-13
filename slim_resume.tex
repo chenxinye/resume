@@ -1,0 +1,128 @@
+\documentclass[10pt, a4paper]{article}
+
+\usepackage[left=1.5in,top=1.2in,right=1.5in,bottom=1.2in]{geometry} 
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{helvet} 
+\renewcommand\familydefault{\sfdefault} 
+\usepackage{microtype}      
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{fontawesome5}
+\usepackage{parskip} 
+
+\definecolor{MujiGray}{RGB}{60, 60, 60} 
+\definecolor{MujiEarth}{RGB}{160, 110, 50} 
+\definecolor{LIGHTLINE}{RGB}{200, 200, 200}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=MujiGray,
+    urlcolor=MujiEarth, 
+    pdfborder={0 0 0}
+}
+
+\titleformat{\section}
+  {\normalfont\small\bfseries\color{MujiGray}\uppercase} 
+  {}
+  {0em}
+  {}[\color{LIGHTLINE}\titlerule]
+\titlespacing{\section}{0pt}{18pt}{6pt}
+
+\setlist[itemize]{
+    label={\color{MujiEarth}\tiny$\bullet$}, 
+    leftmargin=*,
+    itemsep=1pt,
+    parsep=1pt,
+    topsep=2pt
+}
+
+
+\pagestyle{empty} % 移除页码
+
+\begin{document}
+
+\begin{minipage}[t]{0.7\textwidth}
+    \vspace{0pt}
+    {\Large\bfseries\color{MujiGray} HONEY CHEN} \\[0.2cm]
+    {\footnotesize\color{MujiEarth} \textsc{Professional Honey Badger Specialist}} \\[0.4cm]
+    
+    \footnotesize\color{MujiGray}
+    \faMapMarker* \hspace{0.5em} Planet Earth \quad $\cdot$ \quad
+    \faPhone* \hspace{0.5em} +44 07395629285 \quad $\cdot$ \quad
+    \faEnvelope \hspace{0.5em} \href{mailto:cclcquant@yahoo.com}{cclcquant@yahoo.com} \\
+    \faGithub \hspace{0.5em} \href{https://github.com/chenxinye}{github.com/chenxinye}
+\end{minipage}%
+\begin{minipage}[t]{0.3\textwidth}
+    \vspace{0pt}
+    \begin{flushright}
+        % 头像缩小一点，显得更精致 (1.2cm 半径)
+        \begin{tikzpicture}
+            \clip (0,0)  circle (1.1cm) ;
+            \node[anchor=center] at (0,0) {\includegraphics[width=3.3cm]{honey.jpg}}; 
+        \end{tikzpicture}
+    \end{flushright}
+\end{minipage}
+
+\vspace{0.8cm}
+
+\small 
+\color{MujiGray}
+
+\section{Introduction}
+A disciplined individual combining the stillness of nature with the ferocity of a mustelid.
+\begin{itemize}
+    \item \textbf{Athletic Foundation:} Basketball proficiency initiated at age 10.
+    \item \textbf{Language Acquisition:} "English" skill unlocked fully by age 23.
+    \item \textbf{Physicality:} Exceptional vertical leap capabilities.
+    \item \textbf{Wildlife Affinity:} Formed a spiritual bond with a Honey Badger; deeply moved by its resilience.
+\end{itemize}
+
+\section{Current Status}
+\textbf{Full-Time Human Being} \hfill \textit{1996 -- Present} \\
+\textit{\footnotesize Role: Biological Male}
+\begin{itemize}
+    \item Maintaining homeostasis and daily existence.
+\end{itemize}
+
+\section{Education}
+\textbf{University of Bilibili \& YouTube} \hfill \textit{2015 -- 2019} \\
+\textit{\footnotesize Ph.D. in Digital Observation}
+\begin{itemize}
+    \item Focus: Internet subculture and comment section dynamics.
+\end{itemize}
+
+\section{Specialisation}
+\begin{itemize}
+    \item \textbf{Organic Architecture:} Construction of residential habitats using raw botanical materials.
+    \item \textbf{Badger Diplomacy:} Strategic relationship building with \textit{Mellivora capensis}.
+\end{itemize}
+
+\section{Core Skills}
+\begin{itemize}
+    \item \textbf{Motor Functions:} Jumping, Running, Vocalizing, Emoting.
+    \item \textbf{Languages:} Chinese (Native), English (Advanced).
+    \item \textbf{Tools:} WeChat, WhatsApp.
+\end{itemize}
+
+\section{Honours}
+\textbf{Primary School Rope Skipping Invitational} 
+\begin{itemize}
+    \item \textbf{3rd Place:} Recognized for rhythmic endurance excellence.
+\end{itemize}
+
+\section{Selected Projects}
+\textbf{The Narrative Experiment} \hfill \textit{1996 -- 2019}
+\begin{itemize}
+    \item Executed a verbal storytelling session targeting a wild Honey Badger.
+    \item Outcome: Unilateral communication achieved.
+\end{itemize}
+
+\vspace{1cm}
+\centerline{\scriptsize \color{LIGHTLINE} \textendash \quad End of Document \quad \textendash}
+
+\end{document}
